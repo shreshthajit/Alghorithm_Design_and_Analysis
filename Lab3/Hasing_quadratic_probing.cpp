@@ -34,6 +34,7 @@ int main()
 
     stringstream str(s);
 
+    ///h(x,i)=[h'(x)+c1*i+c2*i*i]mod table_size....
     while(str>>a)
     {
         i = 0;
