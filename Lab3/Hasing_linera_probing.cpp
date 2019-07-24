@@ -36,6 +36,7 @@ int main()
 
     stringstream str(s);
 
+ ///h(x)=[h(x)+f(i)]%table_size;here f(i)=i
     while(str>>a)
     {
         i = 0;
