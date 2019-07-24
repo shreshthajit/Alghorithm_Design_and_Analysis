@@ -1,47 +1,83 @@
-#include<bits/stdc++.h>
+ #include <bits/stdc++.h>
+
 using namespace std;
-int radix_size;
-vector < string > token;
 
-int radix(string text)
+struct elements
 {
-    long long rad_sum = 0;
-    for(int i=0; i<text.size(); i++)
-    {
-        int rads = text[i]*pow(radix_size,i);
-        rad_sum += rads;
-    }
-    return rad_sum % token.size();
-}
-void Hashfunction(int output[])
-{
-    for(int i=0; i<token.size(); i++)
-    {
-        int r = radix(token[i]);
-        output[r] = 1;
+    int key;
+    string value;
+};
 
-    }
-}
+
 int main()
 {
+    string s, a;
 
-    string input, temp;
-    getline(cin,input);
-    cin>>radix_size;
+    vector<elements> table[100000];
 
-    stringstream s(input);
+    int key = 0, radix, index, mod_num = 100000+1, count = 0;
+    bool found = false;
 
-    while(s >> temp)
+    cout<<"Enter the string:"<<endl;
+
+    getline(cin, s);
+
+    cout<<"Enter the value of radix:"<<endl;
+
+    cin>>radix;
+
+    for(auto &x : s)
+        if(x == ',' || x == '.' || x == '!' || x == ':' || x == ';')
+            x = ' ';
+
+    // cout<<"-->> "<<s<<endl;    
+
+    stringstream str(s);
+
+    while(str>>a)
     {
-        token.push_back(temp);
+        key=0;
+        long long p=1;
+        // cout<<"-"<<a<<endl;
+        for(int j = 0; j<a.size(); j++)
+        {
+            key += ((int)a[j] *p) % mod_num;
+            key %= mod_num;
+            p *= radix;
+            p %= mod_num;
+
+        }
+        index = key % mod_num;
+        if(table[index].size() == 0)
+        {
+            elements temp;
+            temp.key = key;
+            temp.value = a;
+            table[index].push_back(temp);
+            count++;
+        }
+        else
+        {
+            for(auto y : table[index])
+            {
+                if(y.key == key)
+                {
+                    found = true;
+                    break;
+                }
+            }
+            if(!found)
+            {
+                elements temp;
+                temp.key = key;
+                temp.value = a;
+                table[index].push_back(temp);
+                count++;
+            }
+        }
     }
-     int output[token.size()];
-    Hashfunction(output);
-    int cnt = 0;
-    for(int i=0; i<token.size(); i++)
-    {
-        if(output[i] == 1)
-            cnt++;
-    }
-    cout<<cnt<<endl;
+
+    cout<<"Word Count:  "<<count<<endl;
+
+    return 0;
 }
