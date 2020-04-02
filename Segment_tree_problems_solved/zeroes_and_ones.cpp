@@ -24,6 +24,7 @@ void update(int node, int st, int en, int index) {
 	}
 	tree[node] = tree[2*node] + tree[2*node+1];
 }
+//every time we will go to right if the total sum is greater than the left node otherwise we will chose rightnode....
 int query(int node, int st, int en, int k, int n) {
 	if (st < 1 || en > n || tree[node] < k) {
 		return -1;
