@@ -1,14 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-//FOLD ME
 namespace{
 typedef long long LL;
 typedef vector<int> vint;
 typedef pair<int,int> pint;
 typedef unsigned long long ULL;
-
-//Macros
 int CC_;
 #define sf scanf
 #define pf printf
@@ -36,8 +32,7 @@ const int sss= 20+ 1E5;
 
 int a[sss];
 
-//first is max value of range
-//second is index of max value of range
+ 
 pint tree[4*sss];
 
 void build(int hi, int l, int r){
@@ -53,11 +48,6 @@ void build(int hi, int l, int r){
 
     tree[hi]= max(tree[2*hi],tree[2*hi+1]);
 }
-
-
-
-
-
 pint query(int hi, int l, int r, int st, int nd)
 {
     if(l >= st && r <= nd)
@@ -76,10 +66,6 @@ pint query(int hi, int l, int r, int st, int nd)
     return max(a, b);
 }
 
-
-
-
-
 void update(int hi, int l, int r, int idx, int x)
 {
     if(l == r && l == idx)
@@ -93,10 +79,6 @@ void update(int hi, int l, int r, int idx, int x)
     else update(2*hi+1, m+1, r, idx, x);
     tree[hi]= max(tree[2*hi],tree[2*hi+1]);
 }
-
-
-
-
 void solve(void)
 {
     int n, q;
@@ -137,9 +119,6 @@ void solve(void)
 
     }
 }
-
-
-
 int main(void){
 //    ios_base::sync_with_stdio(false);
 //    cin.tie(NULL);
