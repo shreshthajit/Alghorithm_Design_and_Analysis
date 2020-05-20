@@ -4,9 +4,13 @@ using namespace std;
 int main()
 {
     int n, q;
+
     scanf("%d%d", &n, &q);
+
     set<pair<int,int>> cells; // O(log) per operation
+
     int bad_nei = 0;
+
     for(int i = 0; i < q; i++)
     {
         int row, col;
@@ -28,6 +32,7 @@ int main()
                 }
                 if(cells.count({r, c}))
                 {
+                  cout<<"r="<<r<<" c="<<c<<endl;
                     if(was_forbidden)
                     {
                         bad_nei--;
@@ -35,6 +40,7 @@ int main()
                     else
                     {
                         bad_nei++;
+                        cout<<" bad_nei"<<bad_nei<<endl;
                     }
                 }
             }
