@@ -60,7 +60,6 @@ const int dy[4] = {0, 0, -1, 1};
 int XX[] = { -1, -1, -1, 0, 0, 1, 1, 1 };
 int YY[] = { -1, 0, 1, -1, 1, -1, 0, 1 };
 const int N =  (int)(1 * 1e6 + 10);
-
 bool comp(pair<int, pair<int, int>> p1, pair<int, pair<int, int>> p2)
 {
     if (p1.fi > p2.first) return true;
@@ -70,31 +69,9 @@ bool comp(pair<int, pair<int, int>> p1, pair<int, pair<int, int>> p2)
     }
     return false;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 int n, k;
 string s;
 int dp[N][3];
-
-
 signed main()
 {
     int T = 1;
@@ -103,14 +80,9 @@ signed main()
     while(T--)
     {
         cin >> n >> k;
-
         cin >> s;
-
         int pre[n];
-
         memset(pre,0,sizeof(pre));
-
-
         for(int i=0; i<n; i++) ///this is for prefix sum....
         {
             if(i == 0)
@@ -123,9 +95,6 @@ signed main()
         int sum[n];
 
         memset(sum,0,sizeof(sum));
-
-
-
         for (int i = n-1 ; i>=0; i--)
         {
             int xr = (s[i] - '0') ^ 1;///checking weather ths number is 1 or 0
@@ -138,9 +107,6 @@ signed main()
             {
                 xr += pre[n - 1] - pre[i];
             }
-
-
-
             if (i + k < n)
             {
                 xr += sum[i + k];
@@ -150,11 +116,7 @@ signed main()
 
             sum[i] = min(r, xr);
         }
-
-
         int cnt = 1e15;
-
-
         for(int i=0; i<n; i++)
         {
             int s = sum[i];
@@ -163,7 +125,6 @@ signed main()
 
             cnt = min(cnt, s);
         }
-
         cout<<cnt<<endl;
     }
 }
