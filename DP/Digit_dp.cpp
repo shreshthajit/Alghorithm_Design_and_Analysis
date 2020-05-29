@@ -8,11 +8,6 @@ ll prime[]={2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 
 
 dp[10][8*9+8][2];
 
-
-
-
-
-
 bool check(ll sum)
 {
     for(auto i:prime)
@@ -22,17 +17,6 @@ bool check(ll sum)
     }
     return 0;
 }
-
-
-
-
-
-
-
- 3 3 4
- 0 1 2 3
- pos=3
-
 ll g(string str,ll pos=0,ll sum=0,ll tight=1)
 {
     if(pos==str.length())
@@ -75,12 +59,6 @@ ll g(string str,ll pos=0,ll sum=0,ll tight=1)
     }
 }
 
-
-
-
-
-
-
 int main()
 {
 
@@ -91,9 +69,6 @@ int main()
         ll l,r;
         cin>>l>>r;
         l=l-1;
-
-
-
 
         string a=to_string(l);
         string b=to_string(r);
@@ -107,8 +82,6 @@ int main()
         ll ans2=g(a);
 
         cout<<ans1-ans2<<endl;
-
-
 
     }
 }
