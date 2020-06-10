@@ -132,12 +132,6 @@ int query_sum(int node,int tl,int tr,int l,int r)
 
     return p1+p2;
 }
-
-
-
-
-
-
 int prev_row[105];
 int row[105];
 
