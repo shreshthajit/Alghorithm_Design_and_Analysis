@@ -1,3 +1,8 @@
+
+//s2=sum-s1;
+//ans=s2-s1=sum-s1-s1=sum-2*s1;
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define mod (int) 998244353
