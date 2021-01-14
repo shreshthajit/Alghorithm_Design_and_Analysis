@@ -1,3 +1,6 @@
+if we modify zn we can find that we need to just calculate (n,k)+(n,n)+2*(n-1,k)+2*(n-1,n-1)
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define mod (int) 998244353
