@@ -1,3 +1,21 @@
+
+
+
+ 3^8 =3 x 3 x 3 x 3 x 3 x 3 x 3 x 3
+     
+     =(3)^2 x (3)^2  x (3)^2  x (3)^2 
+  
+     = 9 x 9 x 9 x 9
+     
+     =(9)^2 x (9)^2
+  
+     =81 x 81
+     
+     =(81)^2
+  
+ever time we number of term is getting half of the power and so ultimately we can calculate it
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define mod (int) 998244353
@@ -62,7 +80,6 @@ long long binpow(long long a, long long b,long long md) {
 }
 signed main()
 {
-
     ll a,b,md;
     while(cin>>a>>b>>md)
     {
@@ -70,6 +87,5 @@ signed main()
 
         cout<<binpow(a,b,md)<<endl;
     }
-
 }
 
