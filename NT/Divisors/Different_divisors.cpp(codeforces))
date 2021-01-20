@@ -1,0 +1,89 @@
+#https://codeforces.com/contest/1474/problem/B
+
+In this problem we can see that the answer is the multiplication of two prime number
+
+
+ 
+
+#include<bits/stdc++.h>
+using namespace std;
+#define mod (int) 998244353
+#define MOD (int) 1e9+7
+#define X 1001100011100001111ll
+#define all(a) a.begin(),a.end()
+#define for0(i, n) for (int i = 0; i < n; i++)
+#define for1(i, n) for (int i = 1; i <= n; i++)
+#define loop(i,a,b) for (int i = a; i < b; i++)
+#define bloop(i,a,b) for (int i = a ; i>=b;i--)
+#define tc(t) int t; cin >> t; while (t--)
+#define int long long
+#define ll long long
+ 
+
+long long N=1000000;
+vector<long long >prime;
+vector<long long > sieve()
+{
+    long long status[N];
+    long long  i, j,sqrtN;
+
+    for( i = 2; i <= N; i++ ) status[i] = 0;
+
+    sqrtN = sqrt(N);
+
+    for(i = 3; i <= sqrtN; i += 2 )
+    {
+        if( status[i] == 0)
+        {
+            for( j = i * i; j <= N; j += i + i )
+
+                status[j] = 1; // status of the multiple is 1
+        }
+    }
+
+    prime.push_back(2);
+    for( i = 3; i <= N; i += 2 )
+    {
+        if( status[i] == 0 )
+            prime.push_back(i);
+    }
+
+    return prime;
+}
+
+signed main()
+{
+    sieve();
+
+    tc(t)
+    {
+        ll d;
+        cin>>d;
+        ll ans=1;
+        ll num;
+        ll indx;
+
+        for(int i=0; i<prime.size(); i++)
+        {
+            if(prime[i]-1>=d)
+            {
+                ans=ans*prime[i];
+                num=prime[i];
+                indx=i;
+                break;
+            }
+        }
+
+        for(int i=indx+1; i<prime.size(); i++)
+        {
+            if(prime[i]-num>=d)
+            {
+                ans=ans*prime[i];
+                break;
+            }
+        }
+        cout<<ans<<endl;
+    }
+}
+
+
