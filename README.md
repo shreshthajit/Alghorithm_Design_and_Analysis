@@ -10,6 +10,7 @@ https://www.geeksforgeeks.org/competitive-programming-a-complete-guide/?fbclid=I
 
 https://nishaternotes.blogspot.com/2021/01/blog-post_11.html?fbclid=IwAR0Hu_nTLtGPh5-4-WLQH-8yEnB4R_Ni7wLQqv-j6sfKp7cjJ21Z8bYDjvc
 
+https://nishaternotes.blogspot.com/2021/01/blog-post_14.html?fbclid=IwAR2MqvPjllvNK1sdMmZPidxNnsaNPab5WV5aqBb1FfEFJPu1EjDL-PZ1r1E
 
  
 
