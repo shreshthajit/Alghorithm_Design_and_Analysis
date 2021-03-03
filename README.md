@@ -1,5 +1,8 @@
 # Alghorithm_Design_and_Analysis
 
+#https://codeforces.com/blog/entry/55274 // this is the codeforce topic wise problem link
+
+
 https://www.quora.com/q/techparoksha
 
 https://www.youtube.com/watch?v=oBt53YbR9Kk
