@@ -16,5 +16,5 @@ https://nishaternotes.blogspot.com/2021/01/blog-post_11.html?fbclid=IwAR0Hu_nTLt
 
 https://nishaternotes.blogspot.com/2021/01/blog-post_14.html?fbclid=IwAR2MqvPjllvNK1sdMmZPidxNnsaNPab5WV5aqBb1FfEFJPu1EjDL-PZ1r1E
 
- 
+#https://mathworld.wolfram.com/topics/Geometry.html
 
