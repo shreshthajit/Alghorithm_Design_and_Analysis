@@ -14,7 +14,14 @@ so we can precalculte those length by dp.
 
      length of  25 will be the (dp[21-10]=dp[11]) + (dp[21-9]=dp[12])
      so if we know dp[11] and dp[12] we can easily calculate dp[21] which is the length of 21 after increasing by one.
-
+	     
+     
+	     
+	     
+     suppose we need to find 192 after m operations.
+     we can take the last digit and add dp[n%10+m] every time we divide the number by 10.   
+	  
+------------------------------------------------------------------------------------------------------------------------
 
 
 
