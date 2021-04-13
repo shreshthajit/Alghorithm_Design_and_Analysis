@@ -1,5 +1,10 @@
 so as per the statement we need to increase every digit of a number .
 so we can precalculte those length by dp.
+	
+	
+	here is dp is storing the length of the one digit number after it is creased m times
+	
+	
   
      if n=88 and m=2
      then if we increase
