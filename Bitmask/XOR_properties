@@ -1,0 +1,11 @@
+XOR is always defined in terms of binary digits (or some equivalent notions, like true or false statements). There is no special XOR for integers other than the XORing of corresponding bits of their binary representations.
+
+Let A and B be two boolean variables, and let XOR be a boolean function that takes two boolean variables.
+A⊕B = 1 if either (A = 0 and B = 1) or (A = 1 and B = 0) (i.e. they are different),
+A⊕B=0 if either (A = 0 and B = 0) or (A = 1 and B = 1). (i.e they are same)
+
+Thus taking your question into consideration since out of given n elements of the vector ,every element appears twice except one element,the idea is that the binary representation of the duplicate numbers would be same thus there XOR result would nullify each other as 1⊕1 =0 and 0⊕0= 0.
+
+For A=5 ,its binary representation is 101,so A⊕A = (101)⊕(101) = 000 which is the decimal representation is 0.
+
+REMEMBER IT DOES NOT MATTER IN WHICH ORDER THE NUMBERS APPEAR AFTER EACH OTHER BECAUSE ((A⊕B)⊕C) = (A⊕(B⊕C)) . Eventually what you get at the end after XORING every number is the number which occurs once .
