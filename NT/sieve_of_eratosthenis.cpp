@@ -1,3 +1,9 @@
+#https://www.wikiwand.com/en/Divergence_of_the_sum_of_the_reciprocals_of_the_primes#/Proofs
+#https://www.quora.com/What-is-the-time-complexity-for-implementing-the-Sieve-of-Eratosthenes
+THe conplexity of this algho is n*loglogn because here loglogn=1/p1+1/p2/1+p3+1/p4.............every time we are
+going through the primes and to know more we can follow above articles.
+--------------------------------------------------------------------------------------
+
 #include<bits/stdc++.h>
 using namespace std;
 #define mod (int) 998244353
