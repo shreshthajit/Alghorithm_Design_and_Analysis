@@ -12,7 +12,9 @@ Step1: We need to take an array of size R-L+1
 Step2: We will generate all primes up to R
 Step3:Every time we will take a prime and mark if its multiplyer in the range L to R exis
 
-//https://www.spoj.com/problems/PRIME1/
+ -----------------------------------------------------------------------------------------------------------------------------
+ 
+ //https://www.spoj.com/problems/PRIME1/
 
 #include <bits/stdc++.h>
 #include <iostream>
@@ -57,6 +59,10 @@ void segSieve (ll l, ll r)
     for (int i = 0; primes[i]*primes[i] <= r; ++i)
     {
         int currentPrime = primes[i];
+      // Find the minimum number in [low..high] that is
+			// a multiple of prime[i] (divisible by prime[i])
+			// For example, if low is 31 and prime[i] is 3,
+			// we start with 33.
         ll base = (l/currentPrime)*currentPrime;
         if (base < l) base += currentPrime;
         for (ll j = base; j <= r; j += currentPrime)
