@@ -1,0 +1,35 @@
+abcd=a*1000+b+100+c*10+d
+    =2(a*500+50*c+5*c)+d
+   so abcd is divisible by 2 if d is divisible by 2 
+   
+   
+abcd=a*1000+b+100+c*10+d
+     =999*a+99*b+9*c+a+b+c+d
+     =3(333a+33b+3c)+(a+b+c+d)
+ so if (a+b+c+d) is divisible by 3 than abcd is divible by 3
+ 
+ 
+abcd=a*1000+b+100+c*10+d
+    =4(250*a+25*b)+10*c+d
+    so if 10*c+d which means the last two digit is divisibly by 4 than we can say that this number abcd is divibly by 4
+    
+    
+ 
+abcd=a*1000+b+100+c*10+d
+    =5(200*a+20*b+2*c)+d
+    so if d is divisibly by 5 than the whole number abcd is divibly by 5
+    
+  abcd=a*1000+b+100+c*10+d
+      there is no 3 in the factor of 1000,100,10 so if the number is divibly by both 2 and 3 than we can say that
+      abcd is divisible by 6
+      
+ abcd=a*1000+b+100+c*10+d
+
+     =700a+70b+7c+300a+30b+3c+d
+     =700a+70b+7c+7d+300a+30b+3c-6d
+
+     =700a+70b+7c+3(100a+10b+c-2d)
+     =700a+70b+7c+3*(abc-2d)
+     so if the last digits number that form an integer and we have to subtrace the last digit 2 times from this integer and 
+     then multiplying by 3 if we find it is divibly by 7 than it is divibly 9
+
