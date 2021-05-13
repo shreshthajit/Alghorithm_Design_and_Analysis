@@ -19,3 +19,5 @@ https://nishaternotes.blogspot.com/2021/01/blog-post_14.html?fbclid=IwAR2MqvPjll
 #https://mathworld.wolfram.com/topics/Geometry.html
 
 #http://newb.kettering.edu/wp/matholympiad/past-problems-solutions/
+
+#https://www.cnblogs.com/lz87/p/14245541.html
