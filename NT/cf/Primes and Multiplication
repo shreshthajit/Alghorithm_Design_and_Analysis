@@ -1,0 +1,71 @@
+#https://codeforces.com/problemset/problem/1228/C
+
+We can read the problem statement from the above link.
+So we can take an exaple........
+
+x=30 and n=4
+then we have to calculate
+f(30,1) x f(30,2) x f(30,3) x f(30,4)
+
+ all primes of 30 are= 2  3  5
+
+ f(30,1)=g(1,2) x g(1,3) x g(1,5)
+ f(30,2)=g(2,2) x g(2,3) x g(2,5)
+ f(30,3)=g(3,2) x g(3,3) x g(3,5)
+ f(30,4)=g(4,2) x g(4,3) x g(4,5)
+ 
+ 1 is divided by 2^0 and 3^0 and 5^0
+ 2 is divided by 2^1 and 3^0 and 5^0
+ 3 is divided by 3^0 and 3^1 and 5^0
+ 4 is divided by 2^1 and 2^2 and 3^0 and 5^0
+ so mulitplying all of them we get 2^1 x 3^1 x 2^2 = 24
+ 
+ so for every prime we need to just find the multiply of that prime with that power up to n and add it to our answer.
+
+
+-----------------------------------------------------------------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+#define int long long int
+const int mod =1e9+7;
+
+int  x,n;
+int ans=1;
+
+int p(int a,int b)
+{
+    int res=1;
+    while(b)
+    {
+        if(b%2)
+            res=(res*a)%mod;
+        a=(a*a)%mod;
+        b=b/2;
+    }
+    return res%mod;
+}
+void fg(int ex)
+{
+    int y=n;
+    while(y>=ex)
+    {
+        ans=ans*p(ex,y/ex)%mod;
+        y=y/ex;
+    }
+}
+signed  main()
+{
+    cin>>x>>n;
+    for(int i=2; i*i<=x; i++)
+    {
+        if(x%i==0)
+        {
+            fg(i);
+            while(x%i==0)
+                x=x/i;
+        }
+    }
+    if(x!=1)
+        fg(x);
+    cout<<ans<<endl;
+}
