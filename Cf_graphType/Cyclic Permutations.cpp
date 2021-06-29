@@ -1,3 +1,33 @@
+#https://codeforces.com/contest/1391/problem/C
+
+
+In this problem we need to just remove the number of permutations which can't make cycle from total permutation
+	
+so ans=n!-((n-1)C0+(n-1)C0+(n-1)C0+(n-1)C0+...(n-1)C(n-1))=n!-2^(n-1);
+
+for example
+nc0
+1 2 3 4
+	
+3c1	
+2 3 4 1
+1 3 4 2
+1 2 4 3
+	
+	
+3c2
+3 4 2 1
+2 4 3 1
+1 4 3 2
+
+3c3
+4 3 2 1
+
+so ans=24-8=16
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^6
 #include<bits/stdc++.h>
 using namespace std;
  
