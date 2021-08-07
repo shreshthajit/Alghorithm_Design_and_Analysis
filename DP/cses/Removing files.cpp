@@ -6,6 +6,10 @@ dp[0]=0
   dp[4]=4
   ......
   dp[9]=9
+     
+   dp[x] = minimum number of operations to go from x to zero.
+
+
       
       
                                                    dp[457]
