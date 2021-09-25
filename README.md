@@ -1,3 +1,5 @@
+# https://codeforces.com/blog/entry/95106?fbclid=IwAR0iEq6rKaqGtjr-sJORmNOTRe24p66Mv1N-W2vXPI1hlTiyRhfdUHZp0LY
+
 # Alghorithm_Design_and_Analysis
 #https://youtu.be/19SW3P_PRHQ
 
