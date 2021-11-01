@@ -402,6 +402,12 @@ x – 1 = 15(00001111)
 x & (x-1) = 0 
 
 so 16 is power of 2
+---------------------
+The Quickest way to swap two numbers: 
+ 
+a ^= b;
 
+b ^= a; 
 
+a ^= b;
 
