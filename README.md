@@ -1,5 +1,7 @@
 # Alghorithm_Design_and_Analysis
 
+## [coding game](https://www.codingame.com/training/easy/the-descent)
+
 ## [Guide to competitive programming](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
  
 ## [Usaco guide](https://usaco.guide/adv/xor-basis?lang=cpp)
