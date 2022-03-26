@@ -1,5 +1,9 @@
 # Alghorithm_Design_and_Analysis
 
+### [Lamda Expressions for sorting custom objects](https://www.walletfox.com/course/sortvectorofcustomobjects11.php)
+
+### [programming blog](https://progvar.fun/problemsets)
+
 ## [coding game](https://www.codingame.com/training/easy/the-descent)
 
 ## [Guide to competitive programming](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
