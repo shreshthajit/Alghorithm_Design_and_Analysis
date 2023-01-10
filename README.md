@@ -1,8 +1,10 @@
 # Alghorithm_Design_and_Analysis
 
-### [Lamda Expressions for sorting custom objects](https://www.walletfox.com/course/sortvectorofcustomobjects11.php)
+## [Common mistakes in competitive programming](https://codeforces.com/blog/entry/111217?fbclid=IwAR2ZgOrex2QQnAaBdyAie_4sMpH1k5BFln10ptV_M0FUKMTJ7WnqVJWOWVc)
 
-### [programming blog](https://progvar.fun/problemsets)
+## [Lamda Expressions for sorting custom objects](https://www.walletfox.com/course/sortvectorofcustomobjects11.php)
+
+## [programming blog](https://progvar.fun/problemsets)
 
 ## [coding game](https://www.codingame.com/training/easy/the-descent)
 
